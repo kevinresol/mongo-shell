@@ -1,0 +1,15 @@
+{
+  "name": "mongo-shell",
+  "license": "MIT",
+  "tags": [
+    "mongodb",
+    "shell"
+  ],
+  "classPath": "src",
+  "contributors": [
+    "kevinresol"
+  ],
+  "releasenote": "initial release",
+  "version": "0.0.0",
+  "dependencies": {}
+}

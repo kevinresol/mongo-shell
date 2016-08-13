@@ -1,0 +1,5 @@
+-cp tests
+-main RunTests
+-lib mongo-shell
+-js bin/tests.js
+-dce full
