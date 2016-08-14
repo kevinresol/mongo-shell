@@ -6,10 +6,10 @@ extern class Collection<T> {
 	@:overload(function(doc:Array<T>, ?options:InsertOptions):BulkWriteResult {})
 	public function insert(doc:T, ?options:InsertOptions):WriteResult;
 	
-	public function update(query:Dynamic, update:Dynamic, options:UpdateOptions):WriteResult;
-	public function save(doc:T, options:SaveOptions):WriteResult;
+	public function update(query:Dynamic, update:Dynamic, ?options:UpdateOptions):WriteResult;
+	public function save(doc:T, ?options:SaveOptions):WriteResult;
 	@:overload(function(query:Dynamic, justOne:Bool):WriteResult {})
-	public function remove(query:Dynamic, options:RemoveOptions):WriteResult;
+	public function remove(query:Dynamic, ?options:RemoveOptions):WriteResult;
 	public function drop():Bool;
 	public function createIndex(keys:Dynamic, options:CreateIndexOptions):Dynamic;
 	

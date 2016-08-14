@@ -47,4 +47,6 @@ typedef Person = {
 }
 ```
 
-More examples will be added soon...
+Compile the above haxe code into a js file and run the command `mongo output.js`
+
+Visit the `tests` folder for more examples.

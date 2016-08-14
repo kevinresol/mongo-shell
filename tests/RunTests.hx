@@ -22,8 +22,18 @@ class RunTests {
     
     // retrieve them:
     for(doc in db.persons.find({})) printjson(doc);
-  }
-  
+    
+    // update them:
+    db.persons.find({}).forEach(function(person) {
+      db.persons.update({
+        _id: person._id,
+      }, {
+        "$set": {
+          message: 'Hello, ${person.name}!',
+        }
+      });
+    });
+  }  
 }
 
 extern class MyDatabase extends Database {
