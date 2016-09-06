@@ -3,7 +3,7 @@ package mongo.shell;
 import mongo.shell.bulk.*;
 
 extern class Bulk<T> {
-	public function insert():BulkWriteResult;
+	public function insert(item:T):Void;
 	public function find():Find<T>;
 	public function execute():BulkWriteResult;
 	public function getOperations():Dynamic;

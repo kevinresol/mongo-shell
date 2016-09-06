@@ -1,6 +1,8 @@
 package mongo.shell;
 
 extern class Collection<T> {
+	public function count(query:Dynamic, ?options:Dynamic):Int;
+	
 	public function find(?query:Dynamic, ?projection:Dynamic):Cursor<T>;
 	
 	@:overload(function(doc:Array<T>, ?options:InsertOptions):BulkWriteResult {})
