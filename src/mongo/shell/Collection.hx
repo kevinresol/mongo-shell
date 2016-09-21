@@ -17,6 +17,8 @@ extern class Collection<T> {
 	
 	public function initializeUnorderedBulkOp():Bulk<T>;
 	public function initializeOrderedBulkOp():Bulk<T>;
+	
+	public function getName():String;
 }
 
 typedef InsertOptions = {
