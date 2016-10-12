@@ -7,6 +7,11 @@ Externs and helpers for writing mongo shell scripts in Haxe
 The mongo shell API is huge and each extern methods are manually added.
 For now I will add those most frequently used and for others I will leave them behind until someone needs them.
 
+References:
+
+- https://docs.mongodb.com/manual/tutorial/write-scripts-for-the-mongo-shell/
+- https://docs.mongodb.com/manual/reference/method/
+
 ## Usage
 
 ```haxe
