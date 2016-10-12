@@ -28,7 +28,7 @@ class MongoShell {
 		untyped __js__('printjson({0})', v);
 	}
 	
-	public inline static function runProgram(args:Array<String>):Int {
+	public static function runProgram(args:Array<String>):Int {
 		return untyped __js__('runProgram.apply(undefined, {0})', args);
 	}
 	
@@ -39,7 +39,12 @@ class MongoShell {
 	public inline static function clearRawMongoProgramOutput():Void {
 		untyped __js__('clearRawMongoProgramOutput()');
 	}
+	
 	public inline static function cat(v:String):String {
 		return untyped __js__('cat({0})', v);
+	}
+	
+	public inline static function sleep(f:Float):Void {
+		return untyped __js__('sleep({0})', f);
 	}
 }
