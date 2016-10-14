@@ -28,7 +28,7 @@ class MongoShell {
 		untyped __js__('printjson({0})', v);
 	}
 	
-	public static function runProgram(args:Array<String>):Int {
+	public inline static function runProgram(args:Array<String>):Int {
 		return untyped __js__('runProgram.apply(undefined, {0})', args);
 	}
 	
